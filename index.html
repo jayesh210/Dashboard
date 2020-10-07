@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" t>
+    <title>BBR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image/LOGO.png">
+    <!-- Google Fonts -->
+
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fc3c1fb593.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="sidenav">
+            <div class="brand">
+                <a class="active dash" href="#Dashboard">
+                    <div class="high"></div>Dashboard
+                </a>
+            </div>
+            <a class="active1" href="#about">Profile</a>
+            <a class="active1" href="#services">Services</a>
+            <a class="active1" href="#clients">Clients</a>
+            <a class="active1" href="#contact">Contact</a>
+            <button class="dropdown-btn">Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            <a class="active1" href="#contact">Search</a>
+        </div>
+        <!--        Side bar wrapped-->
+        <div class="rightside space">
+            <header>
+
+                <div class="container hamberg" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <div class="follow-btn">
+
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Jayesh Paliwal
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item name" href="#">Jayesh Paliwal</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-globe"></i> My Profile</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+                <div class="profile-name">
+                    <i class="fas fa-user fa-2x"></i>
+                    <h3>admin</h3>
+                </div>
+
+
+
+            </header>
+            <aside>
+
+                <div class="row">
+                    <div class="col-md-3 info-card">.col-md-3</div>
+                    <div class="col-md-3 info-card">.col-md-3</div>
+                    <div class="col-md-3 info-card">.col-md-3</div>
+                    <div class="col-md-3 info-card">.col-md-3</div>
+                    <div class="col-md-3 info-card">.col-md-3</div>
+                    <div class="col-md-3 info-card">.col-md-3</div>
+                </div>
+            </aside>
+
+
+            <article class="container-fluid ">
+                <div style="overflow-x:auto;">
+                    <table>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                            <th>Points</th>
+                        </tr>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>Adam</td>
+                            <td>Johnson</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                            <td>67</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+            </article>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+        <script src="js.js"></script>
+    </div>
+
+</body></html>

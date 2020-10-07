@@ -1,0 +1,224 @@
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #818180;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-top: 0;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #080015;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Hide side bar on click*/
+.hide {
+    display: none;
+}
+
+.brand {
+    background-color: #120515;
+
+
+}
+
+.brand a {
+    color: #bbbdf4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+
+}
+
+.high {
+    width: 15px;
+    height: 37px;
+    background-color: #ffffff;
+    float: left;
+
+}
+
+/*sidebar active*/
+.active1:active {
+    background-color: #9f5c5c;
+    color: #292626;
+
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: #ffffff;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    font-size: 20px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+.space {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: #9f5c5c;
+    color: #292626;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #818180;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    width: auto;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar2 {
+    width: 25px;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+
+}
+
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*profile*/
+.pro {
+    display: grid;
+}
+
+.art {
+    jus
+}
+
+
+/*table formatting */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+
+/*header*/
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+header .profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+header .hamberg {
+    justify-content: flex-start;
+    margin: 0;
+}
+.fa-user{
+    display: flex;
+    justify-content: center;
+}
+
+
+header .profile-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 10px;
+}
+
+header .follow-btn {
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 0 auto;
+}
+
+/*info card*/
+.info-card {
+
+    width: 100px;
+    height: 200px;
+    display: grid;
+    grid-auto-flow: row;
+    border: 1px solid black;
+    margin:25px;
+}
+.row{
+    justify-content: center;
+}
