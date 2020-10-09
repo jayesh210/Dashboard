@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" t>
     <title>BBR</title>
-  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="image/LOGO.png">
     <!-- Google Fonts -->
 
@@ -25,137 +25,131 @@
 
 <body>
     <div class="container-fluid">
-        <div class="sidenav">
-            <div class="brand">
-                <a class="active dash" href="#Dashboard">
-                    <div class="high"></div>Dashboard
-                </a>
+
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" id="clsbtn" onclick="closeNav()">&times;</a>
+
+                <a class="active1" href="#about">Profile</a>
+                <a class="active1" href="#services">Services</a>
+                <a class="active1" href="#clients">Clients</a>
+                <a class="active1" href="#contact">Contact</a>
+                <a class="active1" href="#contact">Search</a>
+
             </div>
-            <a class="active1" href="#about">Profile</a>
-            <a class="active1" href="#services">Services</a>
-            <a class="active1" href="#clients">Clients</a>
-            <a class="active1" href="#contact">Contact</a>
-            <button class="dropdown-btn">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-            <a class="active1" href="#contact">Search</a>
-        </div>
+        </nav>
+
         <!--        Side bar wrapped-->
-        <div class="rightside space">
-            <header>
+        <header>
 
-                <div class="container hamberg" onclick="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+            <div class="container hamberg " style="font-size:30px;cursor:pointer" onclick="openNav()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </header>
+        <aside>
+            <div class="row">
+                <div class="card-body card col-sm-4 col-md-6 col-lg-2 col-xl-2">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
 
-                <div class="follow-btn">
-
-                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Jayesh Paliwal
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item name" href="#">Jayesh Paliwal</a>
-                        <a class="dropdown-item" href="#"><i class="fas fa-globe"></i> My Profile</a>
-                        <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
-                    </div>
-                </div>
-                <div class="profile-name">
-                    <i class="fas fa-user fa-2x"></i>
-                    <h3>admin</h3>
+                <div class="card-body card col-sm-4 col-md-6 col-lg-2 col-xl-2">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
 
-
-
-            </header>
-            <aside>
-
-                <div class="row">
-                    <div class="col-md-3 info-card">.col-md-3</div>
-                    <div class="col-md-3 info-card">.col-md-3</div>
-                    <div class="col-md-3 info-card">.col-md-3</div>
-                    <div class="col-md-3 info-card">.col-md-3</div>
-                    <div class="col-md-3 info-card">.col-md-3</div>
-                    <div class="col-md-3 info-card">.col-md-3</div>
+                <div class="card-body card col-sm-4 col-md-6 col-lg-2 col-xl-2">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
-            </aside>
 
+                <div class="card-body card col-sm-4 col-md-6 col-lg-2 col-xl-2">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
 
-            <article class="container-fluid ">
-                <div style="overflow-x:auto;">
-                    <table>
-                        <tr>
-                            <th>First Name</th>
-                            <th>Last Name</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                            <th>Points</th>
-                        </tr>
-                        <tr>
-                            <td>Jill</td>
-                            <td>Smith</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                            <td>50</td>
-                        </tr>
-                        <tr>
-                            <td>Eve</td>
-                            <td>Jackson</td>
-                            <td>94</td>
-                            <td>94</td>
-                            <td>94</td>
-                            <td>94</td>
-                            <td>94</td>
-                            <td>94</td>
-                            <td>94</td>
-                            <td>94</td>
-                            <td>94</td>
-                            <td>94</td>
-                        </tr>
-                        <tr>
-                            <td>Adam</td>
-                            <td>Johnson</td>
-                            <td>67</td>
-                            <td>67</td>
-                            <td>67</td>
-                            <td>67</td>
-                            <td>67</td>
-                            <td>67</td>
-                            <td>67</td>
-                            <td>67</td>
-                            <td>67</td>
-                            <td>67</td>
-                        </tr>
-                    </table>
+                <div class="card-body card col-sm-4 col-md-6 col-lg-2 col-xl-2">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                 </div>
 
 
-            </article>
+            </div>
+        </aside>
 
-        </div>
+
+        <article class="container-fluid ">
+            <div style="overflow-x:auto;">
+                <table>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                        <th>Points</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>Adam</td>
+                        <td>Johnson</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                        <td>67</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </article>
+
         <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
         <script src="js.js"></script>
     </div>
 
-</body></html>
+</body>
+
+</html>
