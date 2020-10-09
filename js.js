@@ -1,3 +1,4 @@
+ x.classList.toggle("change");
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
@@ -12,11 +13,10 @@ for (i = 0; i < dropdown.length; i++) {
         }
     });
 }
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
 
-function myFunction(x) {
-    x.classList.toggle("change");
-    $(".sidenav").toggleClass("hide");
-    $(".rightside").toggleClass("space");
-//    $("#article1").toggleClass("main");
-
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
 }
