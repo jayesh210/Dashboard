@@ -1,0 +1,229 @@
+body {
+    background-color: #f0f2ed
+}
+
+
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #818180;
+    overflow-x: hidden;
+    padding-top: 20px;
+    padding-top: 0;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #080015;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Hide side bar on click*/
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#clsbtn {
+    width: 20px;
+    float: right;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: #9f5c5c;
+    color: #292626;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: #818180;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    width: auto;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar2 {
+    width: 25px;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+
+}
+
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*profile*/
+
+
+
+
+/*table formatting */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.table {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+
+
+/*header*/
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-group {
+    display: flex;
+    float: right;
+    justify-content: flex-end;
+}
+
+.input-group button {
+    padding: 0;
+    height: 30px;
+
+/*    text-align: center;*/
+/*    align-content: center;*/
+    -webkit-box-shadow: 0px 0px 23px -3px rgba(133, 128, 133, 0.82);
+    -moz-box-shadow: 0px 0px 23px -3px rgba(133, 128, 133, 0.82);
+    box-shadow: 0px 0px 23px -3px rgba(133, 128, 133, 0.82);
+    background-color: white;
+    margin-right: 10px;
+    padding: 5px;
+}
+.btnpro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2px;
+    margin-right: 8px;
+
+}
+
+.pro{
+    display: flex;
+    flex-direction: column;
+}
+.user,.imh{
+    display: flex;
+    padding: 5px;
+}
+
+
+
+
+/*info card*/
+.card {
+    margin: 5px 15px;
+    -webkit-box-shadow: 0px 0px 23px -3px rgba(133, 128, 133, 0.82);
+    -moz-box-shadow: 0px 0px 23px -3px rgba(133, 128, 133, 0.82);
+    box-shadow: 0px 0px 23px -3px rgba(133, 128, 133, 0.82);
