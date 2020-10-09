@@ -28,61 +28,50 @@
 }
 
 /*Hide side bar on click*/
-.hide {
-    display: none;
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.brand {
-    background-color: #120515;
-
-
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-.brand a {
-    color: #bbbdf4;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-
-
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-.high {
-    width: 15px;
-    height: 37px;
-    background-color: #ffffff;
-    float: left;
-
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#clsbtn{
+    width: 20px;
+    float: right;
 }
 
-/*sidebar active*/
-.active1:active {
-    background-color: #9f5c5c;
-    color: #292626;
-
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
-
-/* On mouse-over */
-.sidenav a:hover,
-.dropdown-btn:hover {
-    color: #ffffff;
-}
-
-/* Main content */
-.main {
-    margin-left: 200px;
-    /* Same as the width of the sidenav */
-    font-size: 20px;
-    /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
-
-.space {
-    margin-left: 200px;
-    /* Same as the width of the sidenav */
-    padding: 0px 10px;
-}
-
 /* Add an active class to the active dropdown button */
 .active {
     background-color: #9f5c5c;
@@ -210,15 +199,6 @@ header .follow-btn {
 }
 
 /*info card*/
-.info-card {
-
-    width: 100px;
-    height: 200px;
-    display: grid;
-    grid-auto-flow: row;
-    border: 1px solid black;
-    margin:25px;
-}
-.row{
-    justify-content: center;
+.card{
+   margin: 5px 15px;
 }
